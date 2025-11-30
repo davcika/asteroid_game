@@ -14,6 +14,7 @@ def main():
     print("Screen height: 720")
     while True:
         log_state()
+        player.update(dt)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
